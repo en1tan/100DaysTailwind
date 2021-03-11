@@ -1,0 +1,24 @@
+{
+  "name": "100daystailwind",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/en1tan/100DaysTailwind.git",
+  "author": "Asaju Enitan Michael <asajuenitan@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build:css": "postcss assets/css/tailwind.css -o assets/css/main.css",
+    "dev": "yarn build:css & http-server -p 5000"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.2.5",
+    "http-server": "^0.12.3",
+    "postcss": "^8.2.8",
+    "postcss-cli": "^8.3.1",
+    "tailwindcss": "^2.0.3"
+  },
+  "dependencies": {
+    "postcss-import": "^14.0.0",
+    "postcss-loader": "^5.2.0",
+    "watch": "^1.0.2"
+  }
+}
